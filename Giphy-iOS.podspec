@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
-  s.dependency 'AFNetworking/Serialization', '~> 2.3.1'
+  s.dependency 'AFNetworking/Serialization', '~> 2.5.1'
 end
