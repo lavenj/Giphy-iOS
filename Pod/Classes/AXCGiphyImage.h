@@ -16,5 +16,7 @@
 @property (readonly, nonatomic) CGFloat width;
 /** height for animated GIF*/
 @property (readonly, nonatomic) CGFloat height;
+/** height for animated GIF*/
+@property (readonly, nonatomic) NSUInteger filesize;
 - (instancetype) initWithDictionary:(NSDictionary *) dictionary;
 @end
