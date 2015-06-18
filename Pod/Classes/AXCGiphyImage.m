@@ -9,9 +9,9 @@
 #import "AXCGiphyImage.h"
 @interface AXCGiphyImage ()
 @property (strong, readwrite, nonatomic) NSURL * url;
-@property (readwrite, nonatomic) CGFloat width;
-@property (readwrite, nonatomic) CGFloat height;
-@property (readwrite, nonatomic) NSUInteger filesize;
+@property (assign, readwrite, nonatomic) CGFloat width;
+@property (assign, readwrite, nonatomic) CGFloat height;
+@property (assign, readwrite, nonatomic) NSUInteger filesize;
 @end
 
 @implementation AXCGiphyImage
@@ -26,7 +26,7 @@
     self.url = [NSURL URLWithString:dictionary[@"url"]];
     self.width = [dictionary[@"width"] floatValue];
     self.height = [dictionary[@"height"] floatValue];
-	self.filesize = [dictionary[@"size"]unsignedIntegerValue];
+	self.filesize = [dictionary[@"size"]integerValue];
     
     return self;
 }
